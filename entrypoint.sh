@@ -83,7 +83,9 @@ if [ "$NOVNC_ENABLE" = "true" ]; then
 fi
 
 # Add custom processes below this section or within `supervisord.conf`
-mate-session &
+#mate-session &
+startx
+wine notepad
 
 echo "Session Running. Press [Return] to exit."
 read
